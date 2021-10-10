@@ -9,7 +9,7 @@ const ingredients = [
 
 const ulIngrid = document.querySelector('#ingredients');
 
-ingredients.forEach(ingridient => {
+[...ingredients].forEach(ingridient => {
   const liIngrid = document.createElement('li');
 
   liIngrid.textContent = ingridient;
