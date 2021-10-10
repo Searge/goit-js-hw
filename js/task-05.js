@@ -8,4 +8,4 @@ const inputName = () => {
     }
 }
 
-inputEl.addEventListener('blur', inputName)
+inputEl.addEventListener('input', inputName)
