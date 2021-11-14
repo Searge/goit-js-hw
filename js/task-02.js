@@ -9,9 +9,13 @@ const ingredients = [
 
 const ulIngrid = document.querySelector('#ingredients');
 
-[...ingredients].forEach(ingridient => {
+const items = ingredients.map(ingridient => {
   const liIngrid = document.createElement('li');
 
   liIngrid.textContent = ingridient;
-  ulIngrid.appendChild(liIngrid);
+  liIngrid.classList.add('item');
+
+  return liIngrid;
 });
+
+ulIngrid.append(...items);
